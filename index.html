@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <!-- Déclaration du document HTML5 -->
+    <meta charset="UTF-8">
+    <!-- UTF-8 permet d'afficher les caractères spéciaux français -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Rend la page responsive (adaptée aux téléphones et tablettes) -->
+    
+    <title>Mon Portfolio Personnel</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <!-- Lien vers le fichier CSS pour les styles -->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Police d'écriture moderne -->
+    
+    <!-- Font Awesome pour les icônes professionnelles réalistes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- HEADER - Barre de navigation en haut -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Mon Portfolio</h1>
+            </div>
+
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                    <li><a href="#apropos" class="nav-link">À Propos de moi </a></li>
+                    <li><a href="#passion" class="nav-link">Ma Passion</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Ligne indicatrice de la section actuelle -->
+        <div class="section-indicator">
+            <div class="indicator-line" id="indicator-line"></div>
+        </div>
+    </header>
+
+    <!-- SECTION ACCUEIL - Premier écran avec introduction -->
+    <section id="accueil" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Bienvenue sur Mon Portfolio</h2>
+                <p class="hero-subtitle">Découvrez qui je suis et ce qui me passionne</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION À PROPOS - Présentation personnelle -->
+    <section id="apropos" class="about">
+        <div class="container">
+            <h2 class="section-title">À Propos de Moi</h2>
+
+            <div class="about-content">
+                <!-- Colonne gauche : Avatar et nom -->
+                <div class="about-left">
+                    <div class="avatar">
+                        <img src="Gemini_Generated_Image_vpllhxvpllhxvpll.png" alt="Photo de profil Levi Yeo" class="avatar-img">
+                    </div>
+                    <h3>YEO LEVI ELIEL.S</h3>
+                    <p class="job-title">Développeur Web junior</p>
+                </div>
+
+                <!-- Colonne droite : Texte de présentation -->
+                <div class="about-right">
+                    <div class="about-section">
+                        <h3>Qui suis-je ?</h3>
+                        <p>Je suis un développeur web junior passionné par la création d'expériences numériques magnifiques et intuitives. Je crée des sites web modernes et performants à l'aide de des connaissances de bases que j'ai acquises au cours de mes études et de mes projets personnels.</p>
+                    </div>
+
+                    <div class="about-section">
+                        <h3>Mon Parcours</h3>
+                        <p>J'ai commencé à apprendre le codage en 2024, après l'obtention de mon baccalauréat. Depuis, j'ai acquis des connaissances en HTML, CSS et JavaScript.
+Je suis actuellement étudiant en développement d'applications et e-services à l'Université Virtuelle de Côte d'Ivoire (UVCI).
+J'ai déjà mené plusieurs projets personnels et professionnels, réalisés dans un cadre sain, sérieux et approprié.</p>
+                    </div>
+
+                    <div class="about-section">
+                        <h3>Mes Compétences</h3>
+                        <div class="skills">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section centres d'intérêt avec grille de cartes -->
+            <div class="interests-section">
+                <h3>Mes Centres d'Intérêt</h3>
+                <div class="interests-grid">
+                    <div class="interest-card">
+                        <i class="fas fa-palette interest-icon"></i>
+                        <h4>Conception web</h4>
+                        <p>Créer et oragniser des sites actifs,esthétiques et adaptés aux utilisateurs</p>
+                    </div>
+                    <div class="interest-card">
+                        <span class="interest-icon">💻</span>
+                        <h4>Programmation</h4>
+                        <p>Coder des solutions modernes et performantes</p>
+                    </div>
+                    <div class="interest-card">
+                        <span class="interest-icon">🧠</span>
+                        <h4>Curiosté intellectuelle</h4>
+                        <p>Aimer apprendre de nouvelles choses dans les domaines du développement web</p>
+                    </div>
+                   
+                     <div class="interest-card">
+                        <span class="interest-icon">🎮</span>
+                        <h4>Le gaming</h4>
+                        <p>Pratiquer régulièrement pour améliorer mes compétences et me divertir</p>
+                    </div>
+                  
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION PASSION - Ce qui me motive vraiment -->
+    <section id="passion" class="passion">
+        <div class="container">
+            <h2 class="section-title">Ma Passion</h2>
+
+            <!-- Grille de cartes avec les passions -->
+            <div class="passion-grid">
+                <div class="passion-card">
+                    <div class="passion-number">1</div>
+                    <h3>Développement Web & Programmation</h3>
+                    <p>Je suis passionné par la création de sites web modernes et fonctionnels. Maîtriser HTML, CSS et JavaScript pour transformer les idées en réalité numérique est ma spécialité.</p>
+                    <div class="passion-details">
+                        <span class="detail">HTML5</span>
+                        <span class="detail">CSS3</span>
+                        <span class="detail">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="passion-card">
+                    <div class="passion-number">2</div>
+                    <h3>Entrepreneuriat en Ligne</h3>
+                    <p>Lancer des projets web et générer des revenus en ligne est un défi que j'ai souvent relever. Je crois au pouvoir de l'e-commerce et des solutions numériques pour créer des opportunités.</p>
+                    <div class="passion-details">
+                        <span class="detail">E-commerce</span>
+                        <span class="detail">Business</span>
+                        <span class="detail">Revenus</span>
+                    </div>
+                </div>
+
+                <div class="passion-card">
+                    <div class="passion-number">3</div>
+                    <h3>Gaming & Jeux Vidéo</h3>
+                    <p>Les jeux vidéo me passionnent ! Qu'il s'agisse de jouer, de suivre des compétitions esports ou de gérer des projets liés aux jeux, je suis dans mon élément.</p>
+                    <div class="passion-details">
+                        <span class="detail">Gaming</span>
+                        <span class="detail">Esports</span>
+                        <span class="detail">Projets Jeux</span>
+                    </div>
+                </div>
+
+                <div class="passion-card">
+                    <div class="passion-number">4</div>
+                    <h3>Musique Gospel & Rap Chrétien</h3>
+                    <p>La musique gospel et le rap chrétien sont ma passion. Écouter, créer et partager du hip-hop avec un message chrétien inspirant pour impacter positivement les esprits.</p>
+                    <div class="passion-details">
+                        <span class="detail">Gospel</span>
+                        <span class="detail">Rap Chrétien</span>
+                        <span class="detail">Inspiration</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section interactive : Découvrir les motivations -->
+            <div class="passion-interactive">
+                <h3>Qu'est-ce qui me motive vraiment ?</h3>
+               
+                <div class="motivation-buttons">
+                    <button class="motivation-btn">
+                        <span class="btn-emoji">💡</span> Curiosité
+                    </button>
+                    <button class="motivation-btn">
+                        <span class="btn-emoji">🎯</span> Défi
+                    </button>
+                    <button class="motivation-btn">
+                        <span class="btn-emoji">👥</span> Communauté
+                    </button>
+                    <button class="motivation-btn">
+                        <span class="btn-emoji">🏆</span> Excellence
+                    </button>
+                </div>
+
+                <div class="motivation-response"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CONTACT - Formulaire et informations -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Restons en Contact</h2>
+
+            <div class="contact-wrapper">
+                <!-- Informations de contact -->
+                <div class="contact-info">
+                    <h3>Parlons de vos projets !</h3>
+                    <p>Que vous ayez une question, une idée de projet ou simplement envie de discuter, je serais ravi de vous entendre.</p>
+
+                    <div class="contact-links">
+                        <a href="https://github.com" class="contact-link"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/in/levi-yeo-38415632a?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="contact-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://x.com/levi_yeo77964" class="contact-link x-logo">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.627l-5.1-6.694-5.867 6.694h-3.31l7.732-8.835L2.882 2.25h6.791l4.6 6.088L18.244 2.25zM17.83 19.708h1.835L6.281 4.126H4.371l13.46 15.582z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER - Pied de page -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Mon Portfolio. Fait avec ❤️ et passion.</p>
+        </div>
+    </footer>
+
+    <!-- Librairie EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/index.min.js"></script>
+    
+    <!-- Lien vers le fichier JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
