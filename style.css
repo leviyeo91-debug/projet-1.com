@@ -1,5 +1,5 @@
-﻿/* =============================================
-   PORTFOLIO PERSONNEL - FEUILLE DE STYLES CSS
+/* =============================================
+   
    ============================================= */
 
 /* ===== VARIABLES CSS - Couleurs et dimensions ===== */
@@ -78,6 +78,17 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     font-weight: 700;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar { display: flex; }
@@ -398,138 +409,6 @@ body {
     border: 1px solid rgba(236, 72, 153, 0.4);
 }
 
-/* Section interactive */
-.passion-interactive {
-    background: rgba(15, 23, 42, 0.6);
-    border: 1px solid rgba(99, 102, 241, 0.2);
-    border-radius: var(--border-radius-lg);
-    padding: var(--spacing-xl);
-    text-align: center;
-}
-
-.passion-interactive h3 {
-    font-size: 1.5rem;
-    color: var(--color-primary);
-    margin-bottom: var(--spacing-lg);
-}
-
-.motivation-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--spacing-md);
-    justify-content: center;
-    margin-bottom: var(--spacing-lg);
-}
-
-.motivation-btn {
-    background: rgba(99, 102, 241, 0.1);
-    border: 2px solid rgba(99, 102, 241, 0.4);
-    color: var(--color-primary);
-    padding: var(--spacing-sm) var(--spacing-lg);
-    border-radius: var(--border-radius-md);
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-family: 'Poppins', sans-serif;
-}
-
-.motivation-btn:hover {
-    background: var(--color-primary);
-    color: white;
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-lg);
-}
-
-.motivation-btn.active {
-    background: var(--gradient-primary);
-    color: white;
-    border-color: transparent;
-}
-
-.btn-emoji { margin-right: var(--spacing-xs); }
-
-.motivation-response {
-    min-height: 80px;
-    padding: var(--spacing-lg);
-    background: rgba(99, 102, 241, 0.05);
-    border-radius: var(--border-radius-md);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #e2e8f0;
-    font-style: italic;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-}
-
-.motivation-response.active { opacity: 1; }
-
-/* ===== SECTION CONTACT ===== */
-.contact {
-    padding: var(--spacing-2xl) 0;
-    background: rgba(15, 23, 42, 0.5);
-}
-
-.contact-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-2xl);
-}
-
-.contact-info h3 {
-    font-size: 1.5rem;
-    margin-bottom: var(--spacing-md);
-    color: #f1f5f9;
-}
-
-.contact-info > p {
-    color: #cbd5e1;
-    margin-bottom: var(--spacing-lg);
-}
-
-.contact-links {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-md);
-}
-
-.contact-link {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--spacing-sm);
-    padding: var(--spacing-md);
-    background: rgba(99, 102, 241, 0.1);
-    border: 1px solid rgba(99, 102, 241, 0.2);
-    border-radius: var(--border-radius-md);
-    color: var(--color-primary);
-    text-decoration: none;
-    transition: all 0.3s ease;
-    font-weight: 500;
-}
-
-.contact-link:hover {
-    background: var(--color-primary);
-    color: white;
-    transform: translateX(5px);
-    box-shadow: var(--shadow-md);
-}
-
-.contact-link svg {
-    width: 20px;
-    height: 20px;
-    margin-right: 6px;
-    display: inline-block;
-    vertical-align: middle;
-    fill: currentColor;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-md);
-}
-
 .form-group {
     display: flex;
     flex-direction: column;
@@ -634,85 +513,6 @@ body {
     50% { transform: translateY(20px); }
 }
 
-/* ===== SECTION CONTACT ===== */
-.contact {
-    padding: var(--spacing-2xl) 0;
-    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(236, 72, 153, 0.05) 100%);
-}
-
-.contact-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: var(--spacing-2xl);
-}
-
-.contact-info {
-    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-    padding: var(--spacing-2xl);
-    border-radius: var(--border-radius-lg);
-    border: 1px solid rgba(148, 163, 184, 0.2);
-    box-shadow: var(--shadow-lg);
-    max-width: 600px;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.contact-info:hover {
-    border-color: rgba(99, 102, 241, 0.5);
-    box-shadow: 0 0 30px rgba(99, 102, 241, 0.2);
-    transform: translateY(-5px);
-}
-
-.contact-info h3 {
-    font-size: 1.8rem;
-    color: var(--color-primary);
-    margin-bottom: var(--spacing-md);
-    font-weight: 700;
-}
-
-.contact-info p {
-    font-size: 1.1rem;
-    color: #cbd5e1;
-    margin-bottom: var(--spacing-lg);
-    line-height: 1.8;
-}
-
-.contact-links {
-    display: flex;
-    justify-content: center;
-    gap: var(--spacing-lg);
-    flex-wrap: wrap;
-}
-
-.contact-link {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--spacing-sm);
-    padding: var(--spacing-md) var(--spacing-lg);
-    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-    color: #f8fafc;
-    text-decoration: none;
-    border-radius: var(--border-radius-md);
-    font-weight: 600;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-}
-
-.contact-link:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
-    border-color: rgba(255, 255, 255, 0.2);
-}
-
-.contact-link i {
-    font-size: 1.3rem;
-}
-
-.contact-link.x-logo {
-    padding: var(--spacing-md) calc(var(--spacing-lg) - 2px);
-}
-
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
     .nav-list { gap: var(--spacing-md); font-size: 0.9rem; }
@@ -720,8 +520,6 @@ body {
     .contact-wrapper { grid-template-columns: 1fr; }
     .interests-grid { grid-template-columns: 1fr; }
     .passion-grid { grid-template-columns: 1fr; }
-    .motivation-buttons { flex-direction: column; }
-    .motivation-btn { width: 100%; }
     .hero-title { font-size: 2rem; }
     .section-title { font-size: 2rem; }
     .container { padding: 0 var(--spacing-md); }
